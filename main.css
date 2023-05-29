@@ -14,7 +14,8 @@ html {
 body {
   width: 100vw;
   min-height: 100vh;
-  background-color: #722F37;
+  background-image: url('/img/background.jpg');
+  background-repeat: repeat;
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
