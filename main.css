@@ -33,7 +33,7 @@ body {
   position: relative;
   width: 35rem;
   height: 35rem;
-  margin: 6rem;
+  margin: 4rem;
 }
 
 .container .box:hover .imgBox {
@@ -57,7 +57,7 @@ body {
 .imgBox img {
   width: 35rem;
   height: 35rem;
-  object-fit: cover;
+  object-fit: contain;
   resize: both;
 }
 
