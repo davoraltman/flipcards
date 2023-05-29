@@ -23,31 +23,31 @@ function displayRandomBoxElements() {
 window.onload = displayRandomBoxElements;
 
 // James Clear menu item
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
+function displayJamesClearElementsRandomly() {
+    // Get a list of all elements with the jamesclear class and other elements
+    const container = document.querySelector('.container');
+    const jamesclearElements = Array.from(container.querySelectorAll('.jamesclear'));
+    const otherElements = Array.from(container.children).filter(el => !el.classList.contains('jamesclear'));
+
+    // Remove elements from the container
+    container.innerHTML = '';
+
+    // Shuffle the jamesclear elements
+    const shuffle = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    };
+    const shuffledJamesClearElements = shuffle(jamesclearElements);
+
+    // Add the shuffled jamesclear elements back to the container
+    shuffledJamesClearElements.forEach(el => container.appendChild(el));
+
+    // Adjust opacity for other elements and add them to the container
+    otherElements.forEach(el => {
+        el.style.opacity = '0.3';
+        container.appendChild(el);
+    });
 }
-
-function displayElementsByClassRandomOrder(className) {
-  const elementsWithClass = Array.from(document.getElementsByClassName(className));
-  const elementsWithoutClass = Array.from(document.querySelectorAll(`:not(.${className})`));
-  
-  elementsWithoutClass.forEach(el => {
-    el.style.opacity = "0.3";
-  });
-
-  const shuffledElementsWithClass = shuffleArray(elementsWithClass);
-  
-  shuffledElementsWithClass.forEach((el, index) => {
-    el.style.order = index;
-  });
-
-  elementsWithoutClass.forEach((el, index) => {
-    el.style.order = shuffledElementsWithClass.length + index;
-  });
-}
-
-displayElementsByClassRandomOrder("jamesclear");
