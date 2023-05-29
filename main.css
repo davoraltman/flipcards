@@ -191,7 +191,7 @@ nav li a {
 }
 
 nav li a:hover {
-  text-decoration: underline;
+  text-decoration: underline #f5f5f5;
 }
 
 
