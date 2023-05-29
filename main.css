@@ -14,8 +14,7 @@ html {
 body {
   width: 100vw;
   min-height: 100vh;
-  background-image: url("/pexels-eugene-golovesov-15766292.jpg");
-  background-repeat: repeat;
+  background-color: #722F37;
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
