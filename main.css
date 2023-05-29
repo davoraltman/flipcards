@@ -198,8 +198,6 @@ nav li a:hover {
 .submenu {
   list-style: none;
   position: absolute;
-  left: 100%;
-  top: 0;
   display: none;
   background: #f8f8f8;
   padding: 5px 0;
