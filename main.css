@@ -201,7 +201,7 @@ nav li a:hover {
 }
 
 nav > li:hover .submenu {
-  display: flex;
+  display: block;
   flex-direction: column;
   color: #f5f5f5;
   z-index: 1000;
