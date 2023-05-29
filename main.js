@@ -69,7 +69,7 @@ function resetPageState() {
     });
   }
 
-  // Adding event listeners to all menu items with submenus
+  /* Adding event listeners to all menu items with submenus
 function displaySubmenu() {document.querySelectorAll('nav li').forEach(item => {
     const submenu = item.querySelector('.submenu');
     
@@ -83,4 +83,4 @@ function displaySubmenu() {document.querySelectorAll('nav li').forEach(item => {
       });
     }
   });
-}
+}*/
