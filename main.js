@@ -47,7 +47,7 @@ function displayJamesClearElementsRandomly() {
 
     // Adjust opacity for other elements and add them to the container
     otherElements.forEach(el => {
-        el.style.opacity = '0.3';
+        el.style.opacity = '0.5';
         container.appendChild(el);
     });
 }
