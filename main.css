@@ -206,10 +206,6 @@ nav li a:hover {
   position: relative;
 }
 
-.submenu:hover li {
-  margin: 0.7rem 10px;
-}
-
 .submenu:hover a {
   display: block;
 }
