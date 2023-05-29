@@ -196,27 +196,25 @@ nav li a:hover {
 }
 
 .submenu {
-  display: none;
+  list-style: none;
   position: absolute;
-  flex-direction: column;
-  color: #f5f5f5;
-  z-index: 1000;
-  padding: 0;
-  list-style: none;;
+  left: 100%;
   top: 0;
+  display: none;
+  background: #f8f8f8;
+  padding: 5px 0;
   min-width: 150px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
-nav > li:hover .submenu {
-  display: flex !important; 
+.submenu li {
+  padding: 5px 10px;
 }
 
 .submenu a {
+  display: block;
+}
+
+nav > li:hover .submenu {
   display: block;
 }
 
