@@ -85,15 +85,13 @@ body {
   height: 25rem;
   object-fit: contain;
   resize: both;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .imgBox p {
   color: #ffffffea;
   font-size: 2rem;
   display: block;
-  margin: 0 auto;
+  margin: 50% auto;
   text-align: center;
 }
 
