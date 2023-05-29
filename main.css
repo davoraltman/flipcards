@@ -85,6 +85,8 @@ body {
   height: 25rem;
   object-fit: contain;
   resize: both;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .imgBox p {
