@@ -196,10 +196,6 @@ nav li a:hover {
 }
 
 .submenu {
-  display: none;
-}
-
-nav > li:hover .submenu {
   display: flex;
   flex-direction: column;
   color: #f5f5f5;
