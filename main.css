@@ -22,6 +22,12 @@ body {
   align-items: center;
 }
 
+.title {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
 .container {
   position: relative;
   display: flex;
