@@ -1,9 +1,23 @@
 function displayRandomBoxElements() {
-    const boxElements = document.querySelectorAll('.box');
-    const shuffledElements = [...boxElements].sort(() => Math.random() - 0.5);
-  
-   return shuffledElements.forEach((element, index) => {
-      element.style.order = index;
-      element.style.display = 'block'; // If elements are initially hidden, this line will display them
+    const container = document.querySelector('.container');
+    const boxElements = Array.from(container.querySelectorAll('.box'));
+
+    // Create a random sorter function
+    function randomSort() {
+        return Math.random() - 0.5;
+    }
+
+    // Shuffle the box elements using randomSort
+    boxElements.sort(randomSort);
+
+    // Clear the container
+    container.innerHTML = '';
+
+    // Append the shuffled box elements back to the container
+    boxElements.forEach(box => {
+        container.appendChild(box);
     });
-  }
+}
+
+// Call the function on page refresh using window.onload or other methods
+window.onload = displayRandomBoxElements;
