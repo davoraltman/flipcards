@@ -54,9 +54,17 @@ function displayJamesClearElementsRandomly() {
 
 // clear James Clear
 
-function clearJamesClear() {
-    return otherElements.forEach(el => {
-    el.style.opacity = '1';
-    container.appendChild(el);
-});
-}
+function resetPageState() {
+    const container = document.querySelector('.container');
+    const allElements = Array.from(container.children);
+  
+    allElements.forEach(el => {
+      el.style.opacity = '';
+    });
+  
+    container.innerHTML = '';
+  
+    allElements.forEach(el => {
+      container.appendChild(el);
+    });
+  }
