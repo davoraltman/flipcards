@@ -197,7 +197,6 @@ nav li a:hover {
 
 .submenu {
   display: none;
- 
 }
 
 .submenu:hover {
@@ -211,15 +210,11 @@ nav li a:hover {
   position: relative;
 }
 
-.submenu li {
+.submenu:hover li {
   margin: 0.7rem 10px;
 }
 
-.submenu a {
-  display: block;
-}
-
-.menu > li:hover .submenu {
+.submenu:hover a {
   display: block;
 }
 
