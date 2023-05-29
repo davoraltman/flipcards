@@ -26,6 +26,7 @@ body {
   position: absolute;
   top: 1rem;
   left: 1rem;
+  margin-bottom: 2rem;
   text-transform: uppercase;
   font-family: verdana;
   font-weight: 700;
