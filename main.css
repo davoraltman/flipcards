@@ -74,15 +74,15 @@ body {
 .imgBox {
   position: absolute;
   top: 0;
-  left: -1rem;
+  left: -2.5rem;
   width: 100%;
   height: 100%;
   z-index: 2;
   transition: all 0.5s ease-in-out;
   background-color: #bfe299;  
   background-image: linear-gradient(315deg, #bfe299 0%, #66b5f6 74%);
-  width: 35rem;
-  height: 30rem;
+  width: 30rem;
+  height: 25rem;
   object-fit: contain;
   resize: both;
 }
@@ -90,6 +90,7 @@ body {
 .imgBox p {
   color: #ffffffea;
   font-size: 2rem;
+  display: block;
   margin: 0 auto;
   text-align: center;
 }
