@@ -21,3 +21,33 @@ function displayRandomBoxElements() {
 
 // Call the function on page refresh using window.onload or other methods
 window.onload = displayRandomBoxElements;
+
+// James Clear menu item
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+function displayElementsByClassRandomOrder(className) {
+  const elementsWithClass = Array.from(document.getElementsByClassName(className));
+  const elementsWithoutClass = Array.from(document.querySelectorAll(`:not(.${className})`));
+  
+  elementsWithoutClass.forEach(el => {
+    el.style.opacity = "0.3";
+  });
+
+  const shuffledElementsWithClass = shuffleArray(elementsWithClass);
+  
+  shuffledElementsWithClass.forEach((el, index) => {
+    el.style.order = index;
+  });
+
+  elementsWithoutClass.forEach((el, index) => {
+    el.style.order = shuffledElementsWithClass.length + index;
+  });
+}
+
+displayElementsByClassRandomOrder("jamesclear");
