@@ -55,9 +55,9 @@ body {
 }
 
 .imgBox img {
-  width: 30rem;
-  height: 30rem;
-  object-fit: cover;
+  width: 35rem;
+  height: 35rem;
+  object-fit: contain;
   resize: both;
 }
 
