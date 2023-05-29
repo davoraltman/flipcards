@@ -51,3 +51,12 @@ function displayJamesClearElementsRandomly() {
         container.appendChild(el);
     });
 }
+
+// clear James Clear
+
+function clearJamesClear() {
+    otherElements.forEach(el => {
+    el.style.opacity = '1';
+    container.appendChild(el);
+});
+}
