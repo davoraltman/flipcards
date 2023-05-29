@@ -24,8 +24,8 @@ body {
 
 .title {
   position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
+  top: 1rem;
+  left: 1rem;
   text-transform: uppercase;
   font-family: verdana;
   font-weight: 700;
