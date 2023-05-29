@@ -55,7 +55,7 @@ function displayJamesClearElementsRandomly() {
 // clear James Clear
 
 function clearJamesClear() {
-    otherElements.forEach(el => {
+    return otherElements.forEach(el => {
     el.style.opacity = '1';
     container.appendChild(el);
 });
