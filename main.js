@@ -70,7 +70,7 @@ function resetPageState() {
   }
 
   // Adding event listeners to all menu items with submenus
-document.querySelectorAll('nav li').forEach(item => {
+function displaySubmenu() {document.querySelectorAll('nav li').forEach(item => {
     const submenu = item.querySelector('.submenu');
     
     if (submenu) {
@@ -83,3 +83,4 @@ document.querySelectorAll('nav li').forEach(item => {
       });
     }
   });
+}
