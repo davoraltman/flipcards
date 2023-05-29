@@ -1,3 +1,3 @@
 # flipcards
 
-An open source site with motiviational quotes and flip cards.
+An open source site with motivational quotes and cards.
