@@ -134,23 +134,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-//check if mobile
-
-function isMobile() {
-    return (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-    );
-  }
-
-//tagline slide on-hover
-
-  function slideTagline() {
-    if (!isMobile()) {
-      const tagline = document.querySelector('.tagline');
-  
-      if (tagline) {
-        tagline.classList.add('tagline-animate');
-      }
-    }
-  }
