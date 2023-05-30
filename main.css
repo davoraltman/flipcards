@@ -232,6 +232,7 @@ nav li a:hover {
 }
 
 .submenu a {
+  display: block;
   padding-top: 3.5rem;
   text-align: center;
 }
