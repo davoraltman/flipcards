@@ -257,4 +257,13 @@ nav li a:hover {
   background-color: #bfe299;
 }
 
+.tagline-animate {
+  position: relative;
+  transition: transform 2s;
+}
+
+.tagline-animate:hover {
+  transform: translateX(300px);
+}
+
 /*# sourceMappingURL=main.css.map a*/
