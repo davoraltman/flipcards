@@ -231,7 +231,7 @@ nav li a:hover {
   max-width: 150px;
 }
 
-.submenu a {
+.submenu li a {
   margin-top: 4rem;
   text-align: center;
 }
