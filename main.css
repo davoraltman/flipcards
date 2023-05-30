@@ -55,6 +55,13 @@ a:hover {
   1px 30px 60px rgba(16,16,16,0.4);
 }
 
+.footer {
+  display: absolute;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-family: verdana;
+}
+
 @media screen and (max-width: 800px) {
   .title {
       left: auto;
