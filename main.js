@@ -68,3 +68,19 @@ function resetPageState() {
       container.appendChild(el);
     });
   }
+
+// Adding event listeners to all menu items with submenus
+function displaySubmenu() {document.querySelectorAll('nav li').forEach(item => {
+    const submenu = item.querySelector('.submenu');
+    
+    if (submenu) {
+      item.addEventListener('mouseenter', () => {
+        submenu.style.display = 'flex';
+      });
+      
+      item.addEventListener('mouseleave', () => {
+        submenu.style.display = 'none';
+      });
+    }
+  });
+}
