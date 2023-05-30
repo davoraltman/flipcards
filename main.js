@@ -52,25 +52,8 @@ function displayJamesClearElementsRandomly() {
     });
 }
 
-// clear James Clear
-
-function resetPageState() {
-    const container = document.querySelector('.container');
-    const allElements = Array.from(container.children);
-  
-    allElements.forEach(el => {
-      el.style.opacity = '';
-    });
-  
-    container.innerHTML = '';
-  
-    allElements.forEach(el => {
-      container.appendChild(el);
-    });
-  }
-
   // Unknown menu item
-function displayJamesClearElementsRandomly() {
+  function displayUnknownElementsRandomly() {
     // Get a list of all elements with the unknown class and other elements
     const container = document.querySelector('.container');
     const unknownElements = Array.from(container.querySelectorAll('.unknown'));
@@ -89,7 +72,7 @@ function displayJamesClearElementsRandomly() {
     };
     const shuffledUnknownElements = shuffle(unknownElements);
 
-    // Add the shuffled jamesclear elements back to the container
+    // Add the shuffled unknown elements back to the container
     shuffledUnknownElements.forEach(el => container.appendChild(el));
 
     // Adjust opacity for other elements and add them to the container
@@ -99,7 +82,7 @@ function displayJamesClearElementsRandomly() {
     });
 }
 
-// clear Unknown
+// clear filter
 
 function resetPageState() {
     const container = document.querySelector('.container');
