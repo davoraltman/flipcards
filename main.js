@@ -69,6 +69,53 @@ function resetPageState() {
     });
   }
 
+  // Unknown menu item
+function displayJamesClearElementsRandomly() {
+    // Get a list of all elements with the unknown class and other elements
+    const container = document.querySelector('.container');
+    const unknownElements = Array.from(container.querySelectorAll('.unknown'));
+    const otherElements = Array.from(container.children).filter(el => !el.classList.contains('unknown'));
+
+    // Remove elements from the container
+    container.innerHTML = '';
+
+    // Shuffle the unknown elements
+    const shuffle = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    };
+    const shuffledUnknownElements = shuffle(unknownElements);
+
+    // Add the shuffled jamesclear elements back to the container
+    shuffledUnknownElements.forEach(el => container.appendChild(el));
+
+    // Adjust opacity for other elements and add them to the container
+    otherElements.forEach(el => {
+        el.style.opacity = '0.5';
+        container.appendChild(el);
+    });
+}
+
+// clear Unknown
+
+function resetPageState() {
+    const container = document.querySelector('.container');
+    const allElements = Array.from(container.children);
+  
+    allElements.forEach(el => {
+      el.style.opacity = '';
+    });
+  
+    container.innerHTML = '';
+  
+    allElements.forEach(el => {
+      container.appendChild(el);
+    });
+  }
+
 // Adding event listeners to all menu items with submenus
 function displaySubmenu() {document.querySelectorAll('nav li').forEach(item => {
     const submenu = item.querySelector('.submenu');
