@@ -114,6 +114,11 @@ a:hover {
   padding: 0 1rem;
 }
 
+.smallParagraph {
+font-size: 1.5rem;
+margin: 10% auto;
+}
+
 .imgBox img {
   width: 35rem;
   height: 35rem;
