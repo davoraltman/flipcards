@@ -223,4 +223,24 @@ nav li a:hover {
   text-align: center;
 }
 
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+#backToTop:hover {
+  background-color: #45a049;
+}
+
 /*# sourceMappingURL=main.css.map a*/
