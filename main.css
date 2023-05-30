@@ -258,6 +258,7 @@ nav li a:hover {
 }
 
 .tagline-animate {
+  display: inline;
   position: relative;
   transition: transform 2s;
 }
