@@ -22,6 +22,15 @@ body {
   align-items: center;
 }
 
+a {
+  color: #ffffffea;
+}
+
+a:hover {
+  color: #ffffffea;
+  font-weight: 500;
+}
+
 .title {
   position: absolute;
   top: 1rem;
