@@ -208,4 +208,8 @@ nav li a:hover {
   max-width: 180px;
 }
 
+.submenu a {
+  padding-top: 2rem;
+}
+
 /*# sourceMappingURL=main.css.map a*/
