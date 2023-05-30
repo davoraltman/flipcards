@@ -115,8 +115,8 @@ a:hover {
 }
 
 .smallParagraph {
-font-size: 1.5rem;
-margin: 10% auto;
+font-size: 1.5rem !important;
+margin: 10% auto !important;
 }
 
 .imgBox img {
