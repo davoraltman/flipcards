@@ -84,3 +84,23 @@ function displaySubmenu() {document.querySelectorAll('nav li').forEach(item => {
     }
   });
 }
+
+// back to top functionality
+document.addEventListener('DOMContentLoaded', function () {
+    let backToTop = document.querySelector('#backToTop');
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 0) {
+            backToTop.style.display = 'block';
+        } else {
+            backToTop.style.display = 'none';
+        }
+    });
+
+    backToTop.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    });
+});
