@@ -47,7 +47,7 @@ body {
   1px 30px 60px rgba(16,16,16,0.4);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .title {
       left: auto;
       right: 2rem;
