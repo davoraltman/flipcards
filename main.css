@@ -47,6 +47,16 @@ body {
   1px 30px 60px rgba(16,16,16,0.4);
 }
 
+@media screen and (max-width: 767px) {
+  .title {
+      left: auto;
+      right: 2rem;
+      top: 10rem;
+      writing-mode: vertical-lr;
+      position: fixed;
+  }
+  }
+
 .container {
   position: relative;
   margin-top: 4rem;
